@@ -13,8 +13,7 @@ app.use(express.json());
 app.use(
   cors({
     credentials: true,
-    // origin: 'http://localhost:5173',
-    origin: 'https://join-us-form.netlify.app',
+    origin: ['http://localhost:5173', 'https://join-us-form.netlify.app'],
   })
 );
 
